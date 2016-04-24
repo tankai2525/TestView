@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <test.kai.tan.com.testview.view.MyToolBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_light"
+        toolbar:titleText="淘宝"
+        toolbar:titleTextSize="20sp"
+        toolbar:titleTextColor1="@android:color/white"
+        toolbar:leftText="左边"
+        toolbar:leftTextColor="@android:color/white"
+        toolbar:leftBackground="@android:color/holo_blue_light"
+        toolbar:rightText="右边"
+        toolbar:rightTextColor="@android:color/white"
+        toolbar:rightBackground="@android:color/holo_orange_dark"
+        />
+    <!--为什么自定义属性没提示-->
+</LinearLayout>
