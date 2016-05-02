@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <test.kai.tan.com.testview.view.MyToolBar
+    <test.kai.tan.com.testview.view.MyActionBar
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"

@@ -18,7 +18,7 @@ import test.kai.tan.com.testview.R;
  * 创建复合控件
  * Created by tankai on 2016/4/24.
  */
-public class MyToolBar extends RelativeLayout {
+public class MyActionBar extends RelativeLayout {
 
     private TextView mTitleView;
     private Button mLeftbtn;
@@ -40,12 +40,12 @@ public class MyToolBar extends RelativeLayout {
         void rightClick();
     }
 
-    public MyToolBar(Context context) {
+    public MyActionBar(Context context) {
         super(context);
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-    public MyToolBar(Context context, AttributeSet attrs) {
+    public MyActionBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         //将atts.xml中定义的declare-styleable的所有属性的值存储到TypedArray中
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.MyTopBar);
@@ -108,7 +108,7 @@ public class MyToolBar extends RelativeLayout {
         });
     }
 
-    public MyToolBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MyActionBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

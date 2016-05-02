@@ -17,9 +17,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn1).setOnClickListener(this);
         findViewById(R.id.btn2).setOnClickListener(this);
         findViewById(R.id.btn3).setOnClickListener(this);
+        findViewById(R.id.btn3_1).setOnClickListener(this);
         findViewById(R.id.btn4).setOnClickListener(this);
         findViewById(R.id.btn5).setOnClickListener(this);
         findViewById(R.id.btn6).setOnClickListener(this);
+        findViewById(R.id.btn7).setOnClickListener(this);
+
     }
 
     private void actionOpen(Class c) {
@@ -27,26 +30,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    private void actionOpen(int flag) {
+        actionOpen(TestViewActivity.class,flag);
+    }
+
+    private void actionOpen(Class c, int flag) {
+        Intent intent = new Intent(MainActivity.this, c);
+        intent.putExtra("flag", flag);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn1:
-                actionOpen(MyViewActivity.class);
+                actionOpen(0);
                 break;
             case R.id.btn2:
-                actionOpen(MyView1Activity.class);
+                actionOpen(1);
                 break;
             case R.id.btn3:
-                actionOpen(MyTextViewActivity.class);
+                actionOpen(2);
+                break;
+            case R.id.btn3_1:
+                actionOpen(3);
                 break;
             case R.id.btn4:
-                actionOpen(ToolbarActivity.class);
+                actionOpen(4);
                 break;
             case R.id.btn5:
-                actionOpen(MyView2Activity.class);
+                actionOpen(5);
                 break;
             case R.id.btn6:
-                actionOpen(ToolbarActivity.class);
+                actionOpen(6);
+                break;
+            case R.id.btn7:
                 break;
         }
     }

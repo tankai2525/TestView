@@ -20,24 +20,36 @@
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="mytextview"
+        android:text="mytextview1"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn3_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mytextview2"
         android:textSize="20sp"/>
     <Button
         android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="toolbar"
+        android:text="actionbar"
         android:textSize="20sp"/>
     <Button
         android:id="@+id/btn5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="myview2"
+        android:text="myview1"
         android:textSize="20sp"/>
     <Button
         android:id="@+id/btn6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="myview"
+        android:text="mygroup"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ee"
         android:textSize="20sp"/>
 </LinearLayout>

@@ -15,11 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyViewActivity" />
-        <activity android:name=".MyView1Activity" />
-        <activity android:name=".MyTextViewActivity" />
-        <activity android:name=".ToolbarActivity" />
-        <activity android:name=".MyView2Activity"></activity>
+        <activity android:name=".ViewGroupActivity" />
+        <activity android:name=".TestViewActivity"/>
     </application>
 
 </manifest>
