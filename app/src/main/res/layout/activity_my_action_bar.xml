@@ -17,7 +17,6 @@
         toolbar:leftBackground="@android:color/holo_blue_light"
         toolbar:rightText="右边"
         toolbar:rightTextColor="@android:color/white"
-        toolbar:rightBackground="@android:color/holo_orange_dark"
         />
     <!--为什么自定义属性没提示-->
 </LinearLayout>
