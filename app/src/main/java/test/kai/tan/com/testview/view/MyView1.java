@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -15,6 +16,7 @@ import com.jiongbull.jlog.JLog;
  */
 public class MyView1 extends View {
 
+    private Paint mPaint0;
     private Paint mPaint1;
     private Paint mPaint2;
 
@@ -37,12 +39,15 @@ public class MyView1 extends View {
         //把整张画布设置成白色
         canvas.drawColor(Color.BLACK);
 
+        mPaint0 = new Paint();
+        mPaint0.setColor(Color.WHITE);
+        mPaint0.setTextAlign(Paint.Align.CENTER);
         mPaint1 = new Paint();
         mPaint1.setColor(Color.BLUE);
         mPaint1.setStyle(Paint.Style.FILL);
         mPaint2 = new Paint();
         mPaint2.setColor(Color.RED);
-        mPaint2.setTextSize(20);
+        mPaint2.setTextSize(60);
         mPaint2.setStyle(Paint.Style.FILL);
 
         JLog.d("getMeasuredWidth:" + getMeasuredWidth() + "--getMeasuredHeight:" + getMeasuredHeight());
@@ -60,16 +65,22 @@ public class MyView1 extends View {
         canvas.drawLine(mWidth/2, 0, mWidth/2, mHeight, mPaint2);
 
         mPaint2.setColor(Color.WHITE);
-        mPaint2.setTextAlign(Paint.Align.CENTER);
+//        mPaint2.setTextAlign(Paint.Align.CENTER);
+
         //绘制文字
         String text = "android canvas gj";
+        Rect mArc = new Rect();
+        mPaint2.getTextBounds(text,0,text.length(),mArc);
         canvas.drawText(text, mWidth/2, mHeight/2, mPaint2);
+        canvas.drawRect(mArc,mPaint2);
 
-        //绘制弧线
-//        RectF mArc = new RectF();
-        mPaint2.setColor(Color.YELLOW);
+
+//        mPaint2.setColor(Color.YELLOW);
         //绘制矩形
-        canvas.drawRect(10,20,100,100, mPaint2);
+//        canvas.drawRect(10,20,100,100, mPaint2);
+
+        //
+
     }
 
 }
