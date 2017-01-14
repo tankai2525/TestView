@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.jiongbull.jlog.JLog;
@@ -38,10 +39,9 @@ public class MyView1 extends View {
         super.onDraw(canvas);
         //把整张画布设置成白色
         canvas.drawColor(Color.BLACK);
-
         mPaint0 = new Paint();
         mPaint0.setColor(Color.WHITE);
-        mPaint0.setTextAlign(Paint.Align.CENTER);
+        mPaint0.setStyle(Paint.Style.STROKE);
         mPaint1 = new Paint();
         mPaint1.setColor(Color.BLUE);
         mPaint1.setStyle(Paint.Style.FILL);
@@ -58,11 +58,10 @@ public class MyView1 extends View {
         float mRadius = mWidth / 4;
         //参数cx cy 是指圆心相对于父容器左上角的坐标（以父容器为原点）
         canvas.drawCircle(mWidth / 2, mHeight / 2, mRadius, mPaint1);
-
         //绘制水平基线
         canvas.drawLine(0, mHeight / 2, mWidth, mHeight / 2, mPaint2);
         //绘制垂直基线
-        canvas.drawLine(mWidth/2, 0, mWidth/2, mHeight, mPaint2);
+        canvas.drawLine(mWidth / 2, 0, mWidth / 2, mHeight, mPaint2);
 
         mPaint2.setColor(Color.WHITE);
 //        mPaint2.setTextAlign(Paint.Align.CENTER);
@@ -70,11 +69,14 @@ public class MyView1 extends View {
         //绘制文字
         String text = "android canvas gj";
         Rect mArc = new Rect();
-        mPaint2.getTextBounds(text,0,text.length(),mArc);
-        canvas.drawText(text, mWidth/2, mHeight/2, mPaint2);
-        canvas.drawRect(mArc,mPaint2);
-
-
+        Log.d("tag", "rect1:" + mArc.left + "-" + mArc.top + "-" + mArc.right + "-" + mArc.bottom);
+        mPaint2.getTextBounds(text, 0, text.length(), mArc);
+        Log.d("tag", "rect2:" + mArc.left + "-" + mArc.top + "-" + mArc.right + "-" + mArc.bottom);
+//        canvas.drawText(text, 0, 0, mPaint2);
+        canvas.drawText(text, mWidth / 2, mHeight / 2, mPaint2);
+        canvas.translate(mWidth / 2, mHeight / 2);
+        canvas.drawRect(mArc, mPaint0);
+//        canvas.drawRect(10,10,20,20,mPaint0);
 //        mPaint2.setColor(Color.YELLOW);
         //绘制矩形
 //        canvas.drawRect(10,20,100,100, mPaint2);
