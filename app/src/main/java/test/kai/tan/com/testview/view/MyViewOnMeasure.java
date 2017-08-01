@@ -26,7 +26,7 @@ public class MyViewOnMeasure extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-//        super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+        super.onMeasure(widthMeasureSpec,heightMeasureSpec);
         //告诉系统画一个多大的view
         JLog.d("widthMeasureSpec:" + widthMeasureSpec + "--heightMeasureSpec:" + heightMeasureSpec);
         setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));
