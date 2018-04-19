@@ -8,48 +8,63 @@
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="onMeasure"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="onDraw"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="mytextview1"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn3_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="mytextview2"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="actionbar"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="myview1"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="mygroup"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ee"
-        android:textSize="20sp"/>
+        android:onClick="onClick"
+        android:text="view绘制流程"
+        android:textSize="20sp" />
 </LinearLayout>

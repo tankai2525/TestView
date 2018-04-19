@@ -5,13 +5,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 /**
  * 绘制两层背景
  * Created by tankai on 2016/4/24.
  */
-public class MyTextView1 extends TextView {
+public class MyTextView1 extends android.support.v7.widget.AppCompatTextView {
 
     private Paint mPaint1;
     private Paint mPaint2;

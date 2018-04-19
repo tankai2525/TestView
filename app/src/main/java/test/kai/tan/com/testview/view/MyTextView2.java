@@ -7,15 +7,15 @@ import android.graphics.LinearGradient;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Shader;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 /**
  * 文字闪动效果
  * Created by tankai on 2016/4/24.
  */
-public class MyTextView2 extends TextView {
+public class MyTextView2 extends AppCompatTextView {
     private Paint mPaint2;
     private Paint mPaint1;
     private Paint mPaint3;

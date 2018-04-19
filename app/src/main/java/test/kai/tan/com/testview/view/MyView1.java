@@ -21,10 +21,12 @@ public class MyView1 extends View {
     private Paint mPaint1;
     private Paint mPaint2;
 
+    //new一个控件时候调用
     public MyView1(Context context) {
         super(context);
     }
 
+    //layout布局中调用，attrs封装了所有属性
     public MyView1(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

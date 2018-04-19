@@ -14,15 +14,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         JLog.init(this).setDebug(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.btn1).setOnClickListener(this);
-        findViewById(R.id.btn2).setOnClickListener(this);
-        findViewById(R.id.btn3).setOnClickListener(this);
-        findViewById(R.id.btn3_1).setOnClickListener(this);
-        findViewById(R.id.btn4).setOnClickListener(this);
-        findViewById(R.id.btn5).setOnClickListener(this);
-        findViewById(R.id.btn6).setOnClickListener(this);
-        findViewById(R.id.btn7).setOnClickListener(this);
-
     }
 
     private void actionOpen(Class c) {
@@ -65,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 actionOpen(6);
                 break;
             case R.id.btn7:
+                actionOpen(7);
                 break;
         }
     }

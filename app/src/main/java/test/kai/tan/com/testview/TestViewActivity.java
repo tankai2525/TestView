@@ -31,7 +31,7 @@ public class TestViewActivity extends AppCompatActivity {
                 break;
             case 4:
                 setContentView(R.layout.activity_my_action_bar);
-                MyActionBar toolBar = (MyActionBar) findViewById(R.id.topbar);
+                MyActionBar toolBar = findViewById(R.id.topbar);
                 toolBar.setOnTopbarClickListener(new MyActionBar.TopBarClickListener() {
                     @Override
                     public void leftClick() {
@@ -53,7 +53,7 @@ public class TestViewActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_my_view_group_1);
                 break;
             case 7:
-
+                setContentView(R.layout.activity_my_view);
                 break;
         }
     }
